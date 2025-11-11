@@ -1,45 +1,135 @@
 <!doctype html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Happy Birthday Prashika</title>
+<title>Happy Birthday Prashika!</title>
 <style>
-  body{margin:0;font-family:'Segoe UI',sans-serif;background:linear-gradient(180deg,#ffe6f0,#fff);display:flex;justify-content:center;align-items:center;min-height:100vh;}
-  .card{background:white;border-radius:25px;box-shadow:0 10px 30px rgba(0,0,0,0.1);padding:30px;max-width:700px;width:90%;text-align:center;position:relative;overflow:hidden;}
+  body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(180deg,#ffe6f0,#fff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    flex-direction:column;
+  }
+  .top-hearts{
+    text-align:center;
+    font-size:24px;
+    margin-top:15px;
+    animation:pulse 1.5s infinite alternate;
+  }
+  @keyframes pulse{
+    0% {transform:scale(1);}
+    100% {transform:scale(1.2);}
+  }
+  .card{
+    background:white;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    padding:30px;
+    max-width:700px;
+    width:90%;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
   h1{color:#ff6fb5;font-size:32px;margin:0 0 10px;}
   p{font-size:18px;color:#333;line-height:1.5;margin:0 0 20px;}
-  .photo{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:20px;}
-  .photo img{width:100px;height:100px;border-radius:50%;}
-  .hearts{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
-  .heart{position:absolute;width:20px;height:20px;background:red;transform:rotate(45deg);animation:float 4s linear infinite;}
-  .heart:before,.heart:after{content:'';position:absolute;width:20px;height:20px;background:red;border-radius:50%;}
+  .photo{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+  }
+  .photo img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+  }
+  .hearts{
+    position:absolute;
+    top:0;left:0;width:100%;height:100%;pointer-events:none;
+  }
+  .heart{
+    position:absolute;
+    width:20px;height:20px;
+    background:red;
+    transform:rotate(45deg);
+    animation:float 4s linear infinite;
+  }
+  .heart:before,.heart:after{
+    content:'';
+    position:absolute;
+    width:20px;height:20px;
+    background:red;
+    border-radius:50%;
+  }
   .heart:before{top:-10px;left:0;}
   .heart:after{left:-10px;top:0;}
-  @keyframes float{0%{transform:translateY(0) rotate(45deg)}50%{transform:translateY(-50px) rotate(45deg)}100%{transform:translateY(0) rotate(45deg)}}
-  iframe{border-radius:15px;}
+  @keyframes float{
+    0%{transform:translateY(0) rotate(45deg);}
+    50%{transform:translateY(-50px) rotate(45deg);}
+    100%{transform:translateY(0) rotate(45deg);}
+  }
+  video{
+    border-radius:15px;
+    max-width:100%;
+    margin-top:20px;
+  }
+  audio{
+    margin-top:20px;
+  }
 </style>
 </head>
 <body>
+
+<!-- Animated Hearts at Top -->
+<div class="top-hearts">💖💗💞💘💝💓💖💗💞💘💝</div>
+
 <div class="card">
+
+  <!-- 5 Photos Section -->
   <div class="photo">
-    <img src="Prashika1.jpg" alt="Prashika 1"style="width:120px;height:120px;border-radius:50%;margin:5px;">
-    <img src="Prashika2.jpg" alt="Prashika 2"style="width:120px;height:120px;border-radius:50%;margin:5px;">
-    <img src="Prashika3.jpg" alt="Prashika 3"style="width:120px;height:120px;border-radius:50%;margin:5px;">
-    <img src="prashika4.jpg" alt="Prashika 4"style="width:120px;height:120px;border-radius:50%;margin:5px;">
-    <img src="Prashika5.jpg" alt="Prashika 5"style="width:120px;height:120px;border-radius:50%;margin:5px;">
+    <img src="Prashika1.jpg" alt="Prashika 1">
+    <img src="Prashika2.jpg" alt="Prashika 2">
+    <img src="Prashika3.jpg" alt="Prashika 3">
+    <img src="prashika4.jpg" alt="Prashika 4">
+    <img src="Prashika5.jpg" alt="Prashika 5">
   </div>
-  <h1>Happy Birthday Prashika 🎉💖 </h1>
-  <p>Happy Birthday to the sweetest and most amazing person I know.<br>We haven’t met yet, but I already feel there’s something special about you.<br>Stay just as lovely and kind always.🎉💖 <br>Take some break, enjoy your day 🌸</p>
-  <iframe width="250" height="150" src="VID_20251111_145744.mp4" title="Video" frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <div class="top-hearts">
-    <div class="heart" style="down:20%;left:10%;animation-delay:0s"></div>
-    <div class="heart" style="down:30%;left:30%;animation-delay:1s"></div>
-    <div class="heart" style="down:40%;left:50%;animation-delay:2s"></div>
-    <div class="heart" style="down:50%;left:70%;animation-delay:3s"></div>
-    <div class="heart" style="down:60%;left:90%;animation-delay:4s"></div>
+
+  <!-- Birthday Message -->
+  <h1>Happy Birthday Prashika! 🎉💖</h1>
+  <p>Happy Birthday to the sweetest and most amazing person I know.<br>
+  We haven’t met yet, but I already feel there’s something special about you.<br>
+  Stay just as lovely and kind always. 🎉💖<br>
+  Take some break, enjoy your day. 🌸</p>
+
+  <!-- Autoplay MP3 Music -->
+  <audio autoplay controls loop>
+    <source src="VID_20251111_145744.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Click-to-play Video -->
+  <video controls>
+    <source src="Messenger_creation_C6AD53E0-BDBB-4D88-B080-C218262B7DC8.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Floating Hearts Animation -->
+  <div class="hearts">
+    <div class="heart" style="top:80%;left:10%;animation-delay:0s"></div>
+    <div class="heart" style="top:70%;left:30%;animation-delay:1s"></div>
+    <div class="heart" style="top:60%;left:50%;animation-delay:2s"></div>
+    <div class="heart" style="top:50%;left:70%;animation-delay:3s"></div>
+    <div class="heart" style="top:40%;left:90%;animation-delay:4s"></div>
   </div>
+
 </div>
+
 </body>
 </html>
