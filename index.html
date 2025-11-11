@@ -89,15 +89,50 @@
 
 <div class="card">
 
-  <!-- 6 Photos Section -->
-  <div class="photo">
-    <img src="Prashika1.jpg" alt="Prashika 1">
-    <img src="Prashika2.jpg" alt="Prashika 2">
-    <img src="Prashika3.jpg" alt="Prashika 3">
-    <img src="Prashika6.jpg" alt="Prashika 6">
-    <img src="Prashika 4.jpg" alt="Prashika 4">
-    <img src="Prashika 5.jpg" alt="Prashika 5">
-  </div>
+  <!-- 💖 Heart-Shaped Photo Gallery -->
+<div class="heart-gallery">
+  <div class="heart-photo"><img src="Prashika1.jpg" alt="Prashika 1"></div>
+  <div class="heart-photo"><img src="Prashika2.jpg" alt="Prashika 2"></div>
+  <div class="heart-photo"><img src="Prashika3.jpg" alt="Prashika 3"></div>
+  <div class="heart-photo"><img src="Prashika6.jpg" alt="Prashika 6"></div>
+  <div class="heart-photo"><img src="Prashika 4.jpg" alt="Prashika 4"></div>
+  <div class="heart-photo"><img src="Prashika 5.jpg" alt="Prashika 5"></div>
+</div>
+
+<style>
+/* 💕 Heart Gallery Layout */
+.heart-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 💞 Heart Photo Shape */
+.heart-photo {
+  width: 180px;
+  height: 160px;
+  position: relative;
+  display: inline-block;
+}
+
+.heart-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: path("M24.5,0C10.9,0,0,10.5,0,23.5c0,16,22.3,29.3,49,54.5C75.7,52.8,98,39.5,98,23.5C98,10.5,87.1,0,73.5,0c-6.5,0-12.3,3-16.5,7.7C36.8,3,31,0,24.5,0z");
+  -webkit-clip-path: path("M24.5,0C10.9,0,0,10.5,0,23.5c0,16,22.3,29.3,49,54.5C75.7,52.8,98,39.5,98,23.5C98,10.5,87.1,0,73.5,0c-6.5,0-12.3,3-16.5,7.7C36.8,3,31,0,24.5,0z");
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* 💫 Hover Effect */
+.heart-photo:hover img {
+  transform: scale(1.08);
+}
+</style>
+
 
   <!-- Birthday Message -->
   <h1>Happy Birthday Prashika 🎉💖</h1>
